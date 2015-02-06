@@ -10,8 +10,29 @@ namespace OS_CS431
     {
         public string FileName;
         public string FileExt;
-        public string FileText;
+        public List<string> FileText;
+        public string FileDate;
+        public string FileSize;
 
+        public File(string FileName, string FileExt, List<string> FileText)
+        {
+            this.FileName = FileName;
+            this.FileExt = FileExt;
+            this.FileText = FileText;
+            this.FileSize = "69kb";
+            this.FileDate = Cosmos.Hardware.RTC.Month + "/" + Cosmos.Hardware.RTC.DayOfTheMonth + "/" + Cosmos.Hardware.RTC.Year;
+        }
+
+        public string getFileSize()
+        {
+            return FileSize;
+        }
+        public string getFileDate()
+        {
+            return FileDate;
+        }
+        
+        
         public void setFileName(string FN)
         {
             FileName = FN;
@@ -23,18 +44,18 @@ namespace OS_CS431
 
         public void setFileExt(string Ext)
         {
-            FileName = Ext;
+            FileExt = Ext;
         }
         public string getFileExt()
         {
             return FileExt;
         }
 
-        public void setFileText(string txt)
+        public void setFileText(List<string> txt)
         {
-            FileName = txt;
+            FileText = txt;
         }
-        public string getFileText()
+        public List<string> getFileText()
         {
             return FileText;
         }

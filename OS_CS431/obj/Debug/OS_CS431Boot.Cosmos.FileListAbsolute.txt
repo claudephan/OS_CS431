@@ -1,1 +1,1 @@
-c:\users\pschomantis125\documents\visual studio 2013\Projects\OS_CS431\OS_CS431\obj\Debug\OS_CS431Boot.CosmosResolveAssemblyReference.cache
+C:\Users\pschomantis125\documents\visual studio 2013\Projects\OS_CS431\OS_CS431\obj\Debug\OS_CS431Boot.CosmosResolveAssemblyReference.cache
