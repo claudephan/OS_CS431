@@ -16,7 +16,7 @@ namespace OS_CS431
         protected override void Run()
         {
             File F1 = new File();
-            Console.Write("C:> ");
+            Console.Write("Input: ");
             var input = Console.ReadLine();
             F1.setFileName(input);
             Console.Write("File name is " + F1.getFileName());
